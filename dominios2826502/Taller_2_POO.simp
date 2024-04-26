@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.96" multi-file="no" uid="simpe0f8fbd7409a4151bcc3f1a86d572682">
+  <meta>
+    <name>Taller_2_POO</name>
+    <authors> JoseDanielAnacona</authors>
+    <description />
+  </meta>
+  <counters>
+    <entity-names />
+    <entity-ids />
+    <diagrams />
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-b67362a9f21f48a7965d1499d1e5ca13" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-5ae9c4361ee54fd997c8b9131ef9a753" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models />
+</sim-project>
