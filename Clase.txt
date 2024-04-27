@@ -1,0 +1,65 @@
+************** JAVA **********************
+******************************************
+Clase1 : 
+
+Instalar jdk (version21)
+openJDK 
+
+--------- Paquetes 
+
+org -> Proyectos academiucos, open source, non profit 
+
+com -> derechos de autor, empresarialies, proyectos profit 
+
+_____
+
+
+Tabla de presedencia de opreadores JAVA 
+*****************************************************
+
+
+************** METODOS *****************************
+****************************************************
+
+
+Un metodo es un bloque de codigo que agrupa un conjunto de instrucciones relacionadas con obtener un resultado (solo uno - lenguajes clasicos - ) 
+
+Funcionn == metodo 
+
+¡ los metodos deben estar dentro de una clase ! <--------
+¡ las funciones no necesariamente pueden estar dentro de u¿na clase ! <-------
+
+Sinonimos de metodo : Procedimientos, Procesos, Rutinas(antes),subrutinas 
+
+Procedimientos --> proceso (Entradas [inputs ] / Salidas [Resultados])
+
+Parametros: variables que se utilizan n los metodos para recibir informacion
+
+FIRMA DE UN METODO 
+
+* Tipo de dato del retorno:
+	void -> ausencoa de Retorno /
+	y el tipo de dato de retorno 
+* nombre de metodo :  verbos infinitivos  (IR AR ER IR) cmelCases
+* Parametros : 
+	Tipo de datos
+	Nombres
+	Separacion por comas 
+
+
+Valor de retorno 
+	Se puede poner en una variabble del mismo tipo 
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

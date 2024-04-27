@@ -1,16 +1,23 @@
 package org.cgmlti.dominios.java.ejercicio4;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class PruebasVehiculos {
     public static void main(String[] args) {
-        // Instaciando Tipo de vehiculos
+        // Creano una instacia de vehiculo
+
+        Vehiculo vehiculo1 = new Vehiculo(78954L, false, 80);
 
         // Creando viaje
-
         Viaje v = new Viaje();
-        v.fechaInicio = LocalDateTime.of(2024, 4, 4, 22, 30, 0);
-        v.fechaFinal = LocalDateTime.of(2024, 4, 4, 6, 30, 0);
+        v.fechaInicio = LocalDate.of(2024, 4, 8);
+        v.fechaFinal = LocalDate.of(2024, 4, 4);
+
+        // invocando el metodo duracion del viaje
+
+        v.duracionViaje(v.fechaFinal, v.fechaInicio);
+
+        System.out.println("Sobrecarga:  " + v.duracionViaje());
 
         Camion camion1 = new Camion();
         camion1.diponibilidad = true;
@@ -21,6 +28,12 @@ public class PruebasVehiculos {
 
         CamionConRemolque camionRemolque1 = new CamionConRemolque();
         camionRemolque1.capcidadCargaExtra = 10;
+        camionRemolque1.capacidadCarga = 20;
+
+        Integer totalCarga = camionRemolque1.totalCarga();
+
+        System.out.println("Total carga del camion: " + totalCarga + " Toneladas");
+        System.out.println("Total de carga sin varible: " + camionRemolque1.totalCarga());
 
         System.out.println("El viaje del camion " +
                 "tiene fecha d inicio: " + camion1.elViajeDelCamion.fechaInicio);

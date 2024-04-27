@@ -1,3 +1,8 @@
 ﻿<user-preferences>
-  <open-windows />
+  <open-windows>
+    <window type="Diagram" resource="pf7ba72962fe54a6c9f82b7cd71097ab4_281717130" />
+    <window type="Diagram" resource="p1a8f8320356649e4b5aec18dad587fd4_746418692" />
+    <window type="Diagram" resource="p7de82b14cbb6403c989c40df2a472855_261811995" />
+    <window type="Diagram" resource="p6a7ffeddc5b040b793f94b8bf317dce4_188298259" />
+  </open-windows>
 </user-preferences>
