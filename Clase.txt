@@ -50,6 +50,226 @@ FIRMA DE UN METODO
 Valor de retorno 
 	Se puede poner en una variabble del mismo tipo 
 
+-----------------------------------------------------------------------2/05/20254
+condicional : ----> expresiones cuyo valor final es :  booleano 
+	
+
+Operadores logicos : 
+
+BOOLEANOS 
+	computan dos operadores operandos:(Verdadero, Falso)
+	
+AND o && 
+OR logico ||
+!
+
+TABLAS DE VERDAD : 
+
+ p   q   &&    ||
+---|---|----|-----|	
+ F   F    F    F
+---|---|----|-----| 
+ F   V    F    V
+---|---|----|-----|
+ V   F    F    V
+---|---|----|-----|
+ V   V    V    V
+  
+Gerarquia de operadores en java 
+
+
+GERARQUIA DE OPERADORES (Incluye operadores logicos)
+
+                      
+                       ()       --> si hay operadores de la misma gerarquia se resuelven de izquierda a derecha 
+		  ------------		
+		      * / %
+		-----------------
+		      + -
+	      ---------------------
+		    >= <= < >
+	    -------------------------
+		     == , !=
+	  -----------------------------
+		        !
+	---------------------------------
+		       &&
+      -------------------------------------
+		       ||
+    -----------------------------------------
+			= 
+  ----------------------------------------------
+
+
+
+TABLAS DE VERDAD 
+	con los siguientes valores 
+	A = 2 , B = 3 , C = 4 , D = 5
+
+	Determine el valor final de las siguientes expresiones 
+
+
+FLUJO SECUENCIAL DE UN PROGRAMA 
+|
+|----->	COMPILADOR --> ejecuta las instrucciones de un programa en ESTRICTO ORDEN DE APARICION 
+|			desde la primera  hasta la ultima 
+|
+|
+|-----> PSEUDOCODIGO : Def: Menera de expresar una secuencia ordenada de pasos que definen unproceso
+		| 
+		|------> Es un lenguaje informal ( de uso diario ) 
+		|	
+		|------> No se ejecuta, No se complila  
+		| 
+		|------> Puede ser escrito en cualquir editor de codigo 
+
+	EJEMPLO: 
+	
+	INICIO -> La puerta de mi casa (Cerrada)
+		|
+		|----> Montarme en la bici 
+		|	
+		|----> Dirigirme a la avenida
+		|
+		|----> Bajar hasta Candelaria la nueva
+		|
+		|----> Coger la villavicencio Hasta el tunal
+		| 
+		|----> Cruzar el semforo para cruzar por el hospital tunal 
+		|
+		|----> Seguir derecho hasta volterar por la 24 sur 
+		|
+		|----> Pasar por el olaya hasta la primera de mayo con 24
+		|
+		|----> Seguir derecho por la 24 hasta llegar a hotua con caracas 
+		|
+		|----> continuar por la caracas hacia el norte hasta la 52 con caracas 
+		|
+		|----> llego al sena por la puerta del parqueadero del sena 
+		|
+		|----> Entrego el carnet para ingresar 
+		|	
+		FIN -> ENTRO AL SENA 
+
+
+
+ESTRUCTURAS SELECTIVAS : Estructuras que permiten la difulcacion del orden secuencial en un programa cualquiera 
+	|
+	|
+	|-------> Tipos de estructuras de JAVA 	
+		        |
+			|--> IF 
+			|		
+			|--> IF ELSE 
+			|
+			|--> IF ELSE IF 
+			|
+			|--> IF ANIDADOS 
+			|
+			|--> SWITCH (seleccion de casos)
+
+
+******************************************************************************************************************************************************************************************************** CLICLOS 
+
+los ciclos son una estructura de control que permiten repetir instrucciones un numro controlado o no controlado 
+
+dos tipos de ciclos   
+
+CONTROLADA POR CONTADOR --->  
+	|
+	|---> VARIABLE DE CONTROL 
+	|
+	|---> VALOR INICIAL
+	|
+	|---> CONDICIONAL (una expresion que tiene como resultado un vlaor booleano) 
+	|
+	|---> INSTRUCCION DE INCREMENYTO (i, u ..)
+
+
++= --> Operador de asignacion complejo 
+
+++ --> Operador de incremnto 
+
+
+ITERACION : --->  Repeticion en el ciclo  
+
+
+OPERADORES DE ASIGNACION COMPUESTOS --- Resumir 
+
+Operadores unarios 
+	|
+	|----->	! 
+	|----->	a++
+	|----->	b--
+
+
+
+
+
+CONTROLADA POR CENTINELAS ----> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 
