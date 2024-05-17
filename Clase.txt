@@ -202,11 +202,24 @@ Operadores unarios
 	|----->	a++
 	|----->	b--
 
-
-
-
-
 CONTROLADA POR CENTINELAS ----> 
+	|
+	|--> 
+	
+
+** CICLO DO WHILE  **********************************************
+*****************************************************************
+
+Es una estructura de control de ciclo se ejecuta el ciclo una o mas veces siempre se cumpla la condicion 
+
+equal es queivalente == 
+
+Switch 
+
+permite realizar distintas acciones con base en posibles valores 
+
+
+
 
 
 
