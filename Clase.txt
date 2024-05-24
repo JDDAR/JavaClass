@@ -220,6 +220,47 @@ permite realizar distintas acciones con base en posibles valores
 
 
 
+***********************************************************************
+************************************************************** POO 
+
+
+
+Atributos --> Estado del objeto 
+
+Metodos --> Comportamiento 
+
+
+**************************************
+Encapsulamiento 
+define el nivel de acceso quie tienen los atributos o metrosdos 
+	
+
+</project>
+
+
+]*************************************************PASOS #001
+
+
+prom -->packesjs
+en la terminal ejecutar : mvn install 
+MIENBRO --> atributo o metodos 
+
+******************
+*******ORDEN RECOMENDADO DE MIEMBROS DE UNA CLASE
+
+01--Atributos 
+02--Constructor por defecto 
+03--Constructor Parametrizado 
+04--Getters & Setters
+	|--> un get y set por cada atributo 
+05--Metodos propios del comportamiento de la clase 
+06--Metodo toString 
+
+*****************************************************
+
+
+super me permite acceder al objeto padre  -----> Padres 
+this ------------------------------------------> Hija
 
 
 
@@ -233,11 +274,7 @@ permite realizar distintas acciones con base en posibles valores
 
 
 
-
-
-
-
-
+  
 
 
 

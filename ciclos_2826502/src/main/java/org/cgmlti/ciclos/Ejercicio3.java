@@ -9,7 +9,7 @@ public class Ejercicio3 {
 
         Scanner in = new Scanner(System.in);
         List<Estudiante> listaEstudiante = new ArrayList<>();
-        String flag = "y"; // Centinela 
+        String flag = "y"; // Centinela
 
         do {
 
@@ -22,7 +22,7 @@ public class Ejercicio3 {
             System.out.println("ingrese la nota del estudiante");
             int nota = in.nextInt();
 
-            // Creamos el objeto del estudi+iante nuevo 
+            // Creamos el objeto del estudi+iante nuevo
             Estudiante estudianteNuevo = new Estudiante(nombre, identificacion, nota);
             listaEstudiante.add(estudianteNuevo);
 
@@ -41,15 +41,14 @@ public class Ejercicio3 {
 
         }
 
-        //Calculando los maximos y los minimos 
+        // Calculando los maximos y los minimos
 
-        if (listaEstudiante.size() > 0) { // Verifico si la lista no esta vacia 
+        if (listaEstudiante.size() > 0) { // Verifico si la lista no esta vacia
 
             double notaMaxima = listaEstudiante.get(0).getNota();
 
-
         }
-        
+
         in.close();
     }
 
