@@ -1,10 +1,10 @@
 package com.exepciones.java.Ejercicio;
 
 import lombok.Getter;
-import lombok.Setter;
+import lombok.ToString;
 
 @Getter
-@Setter
+@ToString // este lo pongo para mosttrar informacion del objeto
 public class Medico {
     private String nombre;
     private String apellido;

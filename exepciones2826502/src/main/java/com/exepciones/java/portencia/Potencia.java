@@ -3,7 +3,7 @@ package com.exepciones.java.portencia;
 public class Potencia {
     public static void main(String[] args) {
 
-        int numero = -7;
+        int numero = 8;
 
         /*
          * Crear un metodo para detectar si n es par
