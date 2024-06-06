@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class VendedorPrueba {
-	public static final String ANSI_RED = "\u001B[31m";
-	public static final String ANSI_GREEN = "\033[0;32m";
-	public static final String ANSY_YELLOW = "\033[0;33m";
 
 	public static void main(String[] args) {
 
@@ -19,24 +16,24 @@ public class VendedorPrueba {
 			try {
 				System.out.println("*** NUEVO VENDEDOR ***");
 
-				System.out.println(ANSI_GREEN + "Ingrese codigo del vendedor");
+				System.out.println("Ingrese codigo del vendedor");
 				int codigoVendedor = in.nextInt();
 				IntDate(codigoVendedor, listaVendedor);
 				in.nextLine();
 
-				System.out.println(ANSI_GREEN + "Ingrese el nombre del Vendedor ");
+				System.out.println("Ingrese el nombre del Vendedor ");
 				String nombreVendedor = in.nextLine();
 				StringDate(nombreVendedor, nombreVendedor);
 
-				System.out.println(ANSI_GREEN + "Ingrese el apellido del vendedor ");
+				System.out.println("Ingrese el apellido del vendedor ");
 				String apellidoVendedor = in.nextLine();
 				StringDate(apellidoVendedor, apellidoVendedor);
 
-				System.out.println(ANSI_GREEN + "Ingrese el numero de identificación cel vendedor ");
+				System.out.println("Ingrese el numero de identificación cel vendedor ");
 				int numeroIdentifica = in.nextInt();
 
 				listaVendedor.add(new Vendedor(codigoVendedor, nombreVendedor, apellidoVendedor, numeroIdentifica));
-				System.out.println(ANSY_YELLOW + "Vendedor ingresado exitosamente");
+				System.out.println("Vendedor ingresado exitosamente");
 
 			} catch (IntDate e) {
 				System.err.println(e.getMessage());
@@ -48,7 +45,6 @@ public class VendedorPrueba {
 
 			System.out.println("Desea ingresar otro Vendedor ? y/n");
 			flag = in.next();
-			in.nextLine();
 
 		} while (flag.equals("y"));
 

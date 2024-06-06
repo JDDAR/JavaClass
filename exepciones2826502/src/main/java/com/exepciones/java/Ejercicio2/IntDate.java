@@ -8,7 +8,4 @@ public class IntDate extends Exception {
 		this.mensaje = mensaje;
 	}
 
-	
-
-	
 }
