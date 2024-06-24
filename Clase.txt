@@ -264,6 +264,31 @@ this ------------------------------------------> Hija
 
 
 
+/************************************************************ PROGRAMACION GENERICA ********
+********************************************************************************************
+Clases y metodods genericos  -->> investigar 
+
+typscriot 
+java 
+zichart ? 
+
+
+Tipos de datos retornos 
+
+/* grantizar todo un sistema de tipo ?  */
+
+
+es una caracterteristicas 
+que los metodos trabajen no importando el parametro 
+
+es una entidad como una clase una interface o un metodo que opera con un tipo parametrizado  es 
+
+
+
+
+
+
+
 
 
 
