@@ -14,7 +14,6 @@ public class PruebaSqlLite {
         // JDBC -> java database conector (Necesita driver especifico para sql life)
 
         String ubicacion = "jdbc:sqlite:C:/Users/APRENDIZ/Documents/JoseAnacona/JavaClass/exepciones2826502/chinook.db";
-
         String consulta = "SELECT art.Name AS nombre_artista, alb.Title AS titulo_album " +
                 "FROM artists art , albums alb " +
                 "WHERE art.ArtistId = alb.ArtistId " +
