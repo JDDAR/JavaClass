@@ -22,18 +22,6 @@ public class Titular {
 		return numIdentidficacion;
 	}
 
-	public List<CuentaBancaria> getCuentas() {
-		return cuentas;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public void setNumIdentidficacion(int numIdentidficacion) {
-		this.numIdentidficacion = numIdentidficacion;
-	}
-
 	public void agregarCuenta(CuentaBancaria cuenta) {
 		this.cuentas.add(cuenta);
 	}

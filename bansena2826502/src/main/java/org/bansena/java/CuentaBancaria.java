@@ -1,9 +1,7 @@
 package org.bansena.java;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class CuentaBancaria {
 
@@ -22,6 +20,7 @@ public class CuentaBancaria {
 		this.divisa = divisa;
 		this.titular = titular;
 		this.cuotaManejo = new ArrayList<>();
+		agregarCuotaManejo(cuotaInicial);
 		titular.agregarCuenta(this);
 		todasLasCuentas.add(this);
 	}
@@ -75,58 +74,74 @@ public class CuentaBancaria {
 		return todasLasCuentas;
 	}
 
-	// metodo para imprimir todas las cuotas bancarias
-
-	public static void verCuentas(List<CuentaBancaria> cuentas, Scanner in) {
-
-		for (CuentaBancaria cuenta : cuentas) {
-			System.out
-					.println("----------------------------------------------------------------------------------------------\n");
-			System.out
-					.println("Numero cuenta: " + cuenta.getNumeroCuenta() + " || Titular: " + cuenta.getTitular().getNombre()
-							+ " || saldo:  " + cuenta.getSaldo() + "\n");
-			System.out
-					.println("----------------------------------------------------------------------------------------------\n");
-		}
-		String accion;
-		do {
-			System.out.println("¿Que acción desea realizar?");
-			System.out.println("------------------------------------------------------------------------");
-			System.out.println(
-					"Ver detalles de cuenta (Ingrese el número de cuenta) || Ver Lista de cuentas (ll)  || Volver al menú principal (Ingrese 'menu') || Salir (Ingrese 'ex')");
-			System.out.println("-------------------------------------------------------------------------");
-			accion = in.next();
-
-			if (accion.equals("ex")) {
-				System.out.println("SALIENDO");
-				System.exit(0);
-			} else if (accion.equals("menu")) {
-				return;
-			} else if (accion.equals("ll")) {
-				for (CuentaBancaria cuenta : cuentas) {
-					System.out
-							.println(
-									"----------------------------------------------------------------------------------------------\n");
-					System.out
-							.println("Numero cuenta: " + cuenta.getNumeroCuenta() + " || Titular: " + cuenta.getTitular().getNombre()
-									+ " || saldo:  " + cuenta.getSaldo() + "\n");
-					System.out
-							.println(
-									"----------------------------------------------------------------------------------------------\n");
-				}
-			} else {
-				for (CuentaBancaria nCuenta : cuentas) {
-					if (nCuenta.getNumeroCuenta().equals(accion)) {
-						System.out.println("\n****************************************************\n");
-						System.out.println("DETALLES DE LA CUENTA " + nCuenta.getNumeroCuenta());
-						System.out.println("\n----------------------------------------------------------\n");
-						System.out.println(" Nombre del titular:  " + nCuenta.getTitular().getNombre() + "\n N° Identificacion: "
-								+ nCuenta.getTitular().getNumIdentidficacion());
-						System.out.println(" Saldo: " + nCuenta.getSaldo() + " || Divisa: " + nCuenta.getDivisa() + "\n");
-					}
-				}
-			}
-		} while (!accion.equals("menu"));
-	}
-
+	/*
+	 * // metodo para imprimir todas las cuotas bancarias
+	 * 
+	 * public static void verCuentas(List<CuentaBancaria> cuentas, Scanner in) {
+	 * 
+	 * for (CuentaBancaria cuenta : cuentas) {
+	 * System.out
+	 * .println(
+	 * "----------------------------------------------------------------------------------------------\n"
+	 * );
+	 * System.out
+	 * .println("Numero cuenta: " + cuenta.getNumeroCuenta() + " || Titular: " +
+	 * cuenta.getTitular().getNombre()
+	 * + " || saldo:  " + cuenta.getSaldo() + "\n");
+	 * System.out
+	 * .println(
+	 * "----------------------------------------------------------------------------------------------\n"
+	 * );
+	 * }
+	 * String accion;
+	 * do {
+	 * System.out.println("¿Que acción desea realizar?");
+	 * System.out.println(
+	 * "------------------------------------------------------------------------");
+	 * System.out.println(
+	 * "Ver detalles de cuenta (Ingrese el número de cuenta) || Ver Lista de cuentas (ll)  || Volver al menú principal (Ingrese 'menu') || Salir (Ingrese 'ex')"
+	 * );
+	 * System.out.println(
+	 * "-------------------------------------------------------------------------");
+	 * accion = in.next();
+	 * 
+	 * if (accion.equals("ex")) {
+	 * System.out.println("SALIENDO");
+	 * System.exit(0);
+	 * } else if (accion.equals("menu")) {
+	 * return;
+	 * } else if (accion.equals("ll")) {
+	 * for (CuentaBancaria cuenta : cuentas) {
+	 * System.out
+	 * .println(
+	 * "----------------------------------------------------------------------------------------------\n"
+	 * );
+	 * System.out
+	 * .println("Numero cuenta: " + cuenta.getNumeroCuenta() + " || Titular: " +
+	 * cuenta.getTitular().getNombre()
+	 * + " || saldo:  " + cuenta.getSaldo() + "\n");
+	 * System.out
+	 * .println(
+	 * "----------------------------------------------------------------------------------------------\n"
+	 * );
+	 * }
+	 * } else {
+	 * for (CuentaBancaria nCuenta : cuentas) {
+	 * if (nCuenta.getNumeroCuenta().equals(accion)) {
+	 * System.out.println("\n****************************************************\n"
+	 * );
+	 * System.out.println("DETALLES DE LA CUENTA " + nCuenta.getNumeroCuenta());
+	 * System.out.println(
+	 * "\n----------------------------------------------------------\n");
+	 * System.out.println(" Nombre del titular:  " +
+	 * nCuenta.getTitular().getNombre() + "\n N° Identificacion: "
+	 * + nCuenta.getTitular().getNumIdentidficacion());
+	 * System.out.println(" Saldo: " + nCuenta.getSaldo() + " || Divisa: " +
+	 * nCuenta.getDivisa() + "\n");
+	 * }
+	 * }
+	 * }
+	 * } while (!accion.equals("menu"));
+	 * }
+	 */
 }

@@ -36,24 +36,7 @@ public abstract class Habilitante {
 		return monto;
 	}
 
-	public void setFechaInicio(LocalDate fechaInicio) {
-		this.fechaInicio = fechaInicio;
-	}
-
-	public void setFechaFin(LocalDate fechaFin) {
-		this.fechaFin = fechaFin;
-	}
-
-	public void setMonto(double monto) {
-		this.monto = monto;
-	}
-
 	// Voy a crear el Metodo
 	public abstract double calcularValor();
-
-	@Override // -> sobre escritura de metodos
-	public String toString() {
-		return "Habilitante [fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", monto=" + monto + "]";
-	}
 
 }
