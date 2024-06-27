@@ -20,7 +20,7 @@ public class CuentaBancaria {
 		this.divisa = divisa;
 		this.titular = titular;
 		this.cuotaManejo = new ArrayList<>();
-		agregarCuotaManejo(cuotaInicial);
+
 		titular.agregarCuenta(this);
 		todasLasCuentas.add(this);
 	}

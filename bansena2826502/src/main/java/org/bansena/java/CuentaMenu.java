@@ -9,7 +9,10 @@ public class CuentaMenu {
 	private List<CuentaBancaria> cuentas;
 
 	public CuentaMenu(List<CuentaBancaria> cuenta) {
-		this.cuentas = cuentas;
+		if (cuenta == null) {
+			throw new IllegalArgumentException("La lista de cuentas no puede ser nula.");
+		}
+		this.cuentas = cuenta;
 	}
 
 	public void mostrarMenu(Scanner in) {

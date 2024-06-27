@@ -45,10 +45,10 @@ public class Main {
                 case "cx":
                     MostrandoCuentas.mostrarMenu(in); // Llama al método de instancia mostrarMenu
                     break;
-                case "tx":
+                case "ha":
                     MostrandoCuentas.agregarHabilitante(in); // Llama al método de instancia agregarHabilitante
                     break;
-                case "ha":
+                case "tx":
                     // Aquí puedes implementar la lógica para agregar habilitantes si lo deseas
                     System.out.println("Opción aún no implementada.");
                     break;
