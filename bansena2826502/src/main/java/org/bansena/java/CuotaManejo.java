@@ -2,29 +2,38 @@ package org.bansena.java;
 
 import java.time.LocalDate;
 
-public class CuotaManejo {
-	private double valor;
-	private LocalDate fecha;
+public class CuotaManejo<E extends Habilitante> {
+	private LocalDate fechaInicio;
+	private LocalDate fechaFin;
+	private double monto;
+	private E habilitante;
 
-	public CuotaManejo(double valor, LocalDate fecha) {
-		this.valor = valor;
-		this.fecha = fecha;
+	public CuotaManejo(E habilitante) {
+		this.habilitante = habilitante;
+		this.fechaInicio = habilitante.getFechaInicio();
+		this.fechaFin = habilitante.getFechaFin();
+		this.monto = habilitante.calcularValor();
 	}
 
-	public double getValor() {
-		return valor;
+	public LocalDate getFechaInicio() {
+		return fechaInicio;
 	}
 
-	public LocalDate getFecha() {
-		return fecha;
+	public LocalDate getFechaFin() {
+		return fechaFin;
 	}
 
-	public void setValor(double valor) {
-		this.valor = valor;
+	public double getMonto() {
+		return monto;
 	}
 
-	public void setFecha(LocalDate fecha) {
-		this.fecha = fecha;
+	public E getHabilitante() {
+		return habilitante;
+	}
+
+	@Override
+	public String toString() {
+		return "CuotaManejo [fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", monto=" + monto + "]";
 	}
 
 }

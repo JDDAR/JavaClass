@@ -11,7 +11,7 @@ public class CuentaBancaria {
 	private double saldo;
 	private String divisa;
 	private Titular titular;
-	private List<CuotaManejo> cuotaManejo; // Lista para almacenar las cuotas de manejo
+	private List<CuotaManejo<? extends Habilitante>> cuotaManejo; // Lista para almacenar las cuotas de manejo
 	private static List<CuentaBancaria> todasLasCuentas = new ArrayList<>(); // lista estatica para todas las cuentas
 
 	// Creando el constructor con parametro de saldoInicial y cuotaInicial
@@ -22,7 +22,6 @@ public class CuentaBancaria {
 		this.divisa = divisa;
 		this.titular = titular;
 		this.cuotaManejo = new ArrayList<>();
-		agregarCuotaManejo(cuotaInicial);
 		titular.agregarCuenta(this);
 		todasLasCuentas.add(this);
 	}
@@ -60,14 +59,14 @@ public class CuentaBancaria {
 	}
 
 	// Metodo para obtener la lista de las cuotas de manejo
-	public List<CuotaManejo> getCuotaManejo() {
+	public List<CuotaManejo<? extends Habilitante>> getCuotaManejo() {
 		return cuotaManejo;
 	}
 
 	// Metodo para agregar la cuota de menajo
-	public void agregarCuotaManejo(double valor) {
-		CuotaManejo cuota = new CuotaManejo(valor, LocalDate.now());// Crea una nueva cuota de manejo con el valor y la
-		// fecha actual .now
+	public void agregarCuotaManejo(Habilitante habilitante) {
+		// Crea una nueva cuota de manejo con el valor y la fecha actual .now
+		CuotaManejo<? extends Habilitante> cuota = new CuotaManejo<>(habilitante);
 		cuotaManejo.add(cuota);
 	}
 

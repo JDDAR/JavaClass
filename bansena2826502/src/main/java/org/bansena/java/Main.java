@@ -18,24 +18,19 @@ public class Main {
         CuentaBancaria cuenta03 = new CuentaBancaria("1003", 1.2154, "Dolares", titular02, 53.2145);
 
         // Agrego otra cuota de manejo a la primera cuenta
-
-        cuenta01.agregarCuotaManejo(500.265);
-        cuenta02.agregarCuotaManejo(7.012356456);
-
         System.out.println("\n**********************************************");
         System.out.println("**           BIENVENIDO A BANSENA           **");
         System.out.println("**********************************************\n");
 
         do {
             // Mostrando informacion del titular y sus cuentas
-            System.out.println("\n**********************************************");
-            System.out.println("**              MENÚ PRINCIPAL                **");
-            System.out.println("**********************************************\n");
-
-            System.out.println("¿Que deseas hacer hoy?\nselecciona el valor predeterminado ej: cx");
+            System.out.println("******************************************** MENÚ PRINCIPAL ***\n");
+            System.out.println("¿Qué deseas hacer hoy?\nSelecciona el valor predeterminado ej: cx");
             System.out.println("-------------------------------------------------------------------");
-            System.out.println("|| (Cuentas Existentes) cx || (Titulares existentes) tx ||  ");
+            System.out.println("|| (Cuentas Existentes) cx || (Titulares existentes) tx ||");
+            System.out.println("|| (Agregar Habilitante a una cuenta) ha || (Salir) ex ||");
             System.out.println("-------------------------------------------------------------------\n");
+
             String opcion = in.nextLine();
 
             switch (opcion) {
@@ -45,15 +40,44 @@ public class Main {
                     List<CuentaBancaria> cuentas = CuentaBancaria.listarCuentas();
                     // Utilizando el metodo para imprimir la lista de cuentas
                     CuentaBancaria.verCuentas(cuentas, in);
-                    continue;
+                    break;
                 case "tx":
                     System.out.println("Estos son los Titulares registradoes en el banco: ");
                     break;
+
+                case "ha":
+                    System.out.println("Estas son las cuentas existentes: ");
+                    List<CuentaBancaria> cuentasEx = CuentaBancaria.listarCuentas();
+                    CuentaBancaria.verCuentas(cuentasEx, in);
+
+                    System.out.println("Ingrese el número de cuenta a la que desea agregar un habilitante:");
+                    String numeroCuenta = in.nextLine();
+
+                    CuentaBancaria cuentaSeleccionada = null;
+                    for (CuentaBancaria cuenta : cuentasEx) {
+                        if (cuenta.getNumeroCuenta().equals(numeroCuenta)) {
+                            cuentaSeleccionada = cuenta;
+                            break;
+                        }
+                    }
+
+                    if (cuentaSeleccionada == null) {
+                        System.out.println("Numero de cuenta no encontrada ");
+                    } else {
+                        Habilitante habilitante = ControladorHabilitante.agregarHabilitante(in);
+                        if (habilitante != null) {
+                            cuentaSeleccionada.agregarCuotaManejo(habilitante);
+                            System.out.println("Habilitante agregado con exito a la cuenta " + numeroCuenta);
+                        }
+                    }
+                case "ex":
+                    System.out.println("Saliendo del programa...");
+                    flag = "n";
+                    break;
                 default:
+                    System.out.println("Opción no válida. Inténtalo de nuevo.");
                     break;
             }
-            System.out.println("¿DESEA SEGUIR EN EL PROGRAMA? s/n ");
-            flag = in.nextLine();
         } while (flag.equals("s"));
         in.close();
 
